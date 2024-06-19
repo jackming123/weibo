@@ -59,4 +59,9 @@ class User extends Authenticatable
         return "http://weibo.test/touxiang.png";
     }
 
+    public function statuses()
+    {
+        return $this->hasMany(Status::class);
+    }
+
 }
